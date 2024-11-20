@@ -1,0 +1,189 @@
+
+.user-collection {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #5b95b0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.user-collection.dark-mode {
+    background-color: #06212d;
+    color: #f1f1f1;
+}
+
+.user-collection-title {
+    color: rgb(240, 244, 240);
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: 'Arial, Helvetica, sans-serif';
+
+}
+
+/* List styles */
+.user-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.user-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #000000;
+    transition: background-color 0.3s ease;
+}
+
+.user-item:hover {
+    background-color: #ffffff;
+}
+
+.user-item.dark-mode:hover {
+    background-color: #000000;
+}
+
+/* User details */
+.user-details {
+    color: rgb(19, 123, 19);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    flex-grow: 1;
+    padding-right: 10px;
+}
+
+/* Action buttons */
+.user-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.action-button {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.action-button:hover {
+    transform: scale(1.05);
+}
+
+.edit-button {
+    background-color: #0288d1;
+    color: white;
+}
+
+.edit-button:hover {
+    background-color: #0277bd;
+}
+
+.delete-button {
+    background-color: #d32f2f;
+    color: white;
+}
+
+.delete-button:hover {
+    background-color: #c62828;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For medium screens (tablets and up to 1200px) */
+@media (max-width: 1200px) {
+    .user-collection {
+        margin: 15px;
+        padding: 15px;
+    }
+
+    .user-collection-title {
+        font-size: 1.3rem;
+    }
+
+    .user-item {
+        padding: 8px;
+    }
+
+    .user-details {
+        font-size: 0.9rem;
+    }
+
+    .action-button {
+        font-size: 0.85rem;
+        padding: 6px 10px;
+    }
+}
+
+/* For tablets and large phones (up to 768px) */
+@media (max-width: 768px) {
+    .user-collection {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .user-collection-title {
+        font-size: 1.2rem;
+    }
+
+    .user-item {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 12px;
+    }
+
+    .user-details {
+        font-size: 0.85rem;
+        padding-right: 0;
+        margin-bottom: 8px;
+    }
+
+    .user-actions {
+        gap: 5px;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .action-button {
+        font-size: 0.8rem;
+        padding: 5px 8px;
+    }
+}
+
+/* For small phones (up to 576px) */
+@media (max-width: 576px) {
+    .user-collection {
+        margin: 8px;
+        padding: 8px;
+    }
+
+    .user-collection-title {
+        font-size: 1.1rem;
+    }
+
+    .user-item {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .user-details {
+        font-size: 0.8rem;
+        margin-bottom: 6px;
+    }
+
+    .user-actions {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .action-button {
+        font-size: 0.75rem;
+        padding: 4px 6px;
+    }
+}

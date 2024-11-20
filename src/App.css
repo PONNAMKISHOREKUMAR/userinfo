@@ -1,0 +1,192 @@
+.app-container {
+  font-family: Arial, sans-serif;
+  background-color: #000000;
+  color: #000;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.app-container.dark-mode {
+  background-color: #333;
+  color: #f1f1f1;
+}
+
+/* Header styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  margin-bottom: 20px;
+  font-family: 'sans-serif';
+  padding: 10px;
+  color: green;
+
+}
+
+.header h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+
+.theme-toggle-btn:hover {
+  background-color: #fff; /* Black background on hover */
+  color: #fff; /* White text on hover */
+}
+
+/* Dark Mode Styling */
+body.dark-mode {
+  background-color: #333;
+  color: #f1f1f1;
+}
+
+body.dark-mode .theme-toggle-btn {
+  background-color: #000; /* Black background for dark mode */
+  color: hsl(0, 0%, 100%); /* White text for dark mode */
+}
+
+body.dark-mode .theme-toggle-btn:hover {
+  background-color: #fff; /* White background on hover for dark mode */
+  color: #000; /* Black text on hover for dark mode */
+}
+
+/* Error message */
+.error-message {
+  color: #dc3545;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 1200px) {
+  .header h1 {
+    font-size: 1.75rem;
+  }
+
+  .theme-toggle-btn {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+  }
+}
+
+@media (max-width: 992px) {
+
+  .header h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .theme-toggle-btn {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+    margin-top: 10px;
+  }
+
+  .app-container {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 1.25rem;
+  }
+
+  .theme-toggle-btn {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+
+  .app-container {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .header h1 {
+    font-size: 1.2rem;
+  }
+
+  .theme-toggle-btn {
+    font-size: 0.75rem;
+    padding: 5px 10px;
+  }
+
+  .app-container {
+    padding: 8px;
+  }
+}
+
+/* Styling for User Form */
+form input, form button {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+form input:focus, form button:focus {
+  outline: none;
+  border-color: #041d37;
+}
+
+/* User List Styling */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 15px;
+  background-color: #f8f9fa;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+ul li .button-group {
+  display: flex;
+  justify-content: flex-start;
+}
+
+ul li button {
+  margin-right: 10px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #0c3765; /* Blue color */
+  color: white;
+  cursor: pointer;
+}
+
+ul li button:hover {
+  background-color: #0056b3; /* Darker blue */
+}
+
+ul li button.delete-btn {
+  background-color: #dc3545; /* Red color */
+}
+
+ul li button.delete-btn:hover {
+  background-color: #c82333; /* Darker red */
+}
+
+/* Responsive user list buttons */
+@media (max-width: 768px) {
+  ul li {
+    padding: 8px;
+  }
+
+  ul li .button-group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  ul li button {
+    margin-right: 0;
+    margin-bottom: 8px;
+    width: 100%;
+  }
+}
